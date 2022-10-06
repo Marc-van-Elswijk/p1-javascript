@@ -1,5 +1,5 @@
 var budget = 100;
-var product = 60;
+var product = prompt ("prijs product");
 var tekst = document.getElementById ("h1")
 
 if (budget > product) {
