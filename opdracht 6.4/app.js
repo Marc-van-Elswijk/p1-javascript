@@ -8,7 +8,7 @@ function multiplyByFive (x, y) {
     return x * y;
 }
 
-console.log (multiplyByFive (18, 51))
+console.log (multiplyByFive (18, 5))
 
 function calculateMinutes(x) {
     return x / 60;
