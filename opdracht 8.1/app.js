@@ -1,4 +1,6 @@
 var answer = document.getElementById("answer"); 
+var x = Number(document.getElementById("input1").value); 
+var y = Number(document.getElementById("input2").value);
 
 function multiply() {
     var x = Number(document.getElementById("input1").value); 
@@ -28,4 +30,13 @@ function minus() {
 
     answer.innerText  = x - y; 
     
+}
+
+function check() {
+    var x = Number(document.getElementById("input1").value); 
+    var y = Number(document.getElementById("input2").value);
+
+    if (x < 1 || y < 1) {
+        answer.innerText = "het getal is te laag";
+    }
 }
