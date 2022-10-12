@@ -6,6 +6,6 @@ function clicker() {
     count += 1;
     tekst.innerText = count;
     if (count == 10) {
-        count = -1;
+        count = 0;
     }
 }
