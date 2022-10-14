@@ -77,3 +77,7 @@ function getResult() {
         resultOutput.innerHTML = 'Helaas dappere krijger. deze keer heb je minder geluk';
     }
 }
+
+function start_spel() {
+    window.location.href = "../pagina/rock paper and scissors.html";
+}
