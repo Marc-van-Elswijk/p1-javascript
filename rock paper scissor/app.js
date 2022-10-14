@@ -76,5 +76,4 @@ function getResult() {
     if (computer == 'dices of evil' && player == "dices of light") {
         resultOutput.innerHTML = 'Helaas dappere krijger. deze keer heb je minder geluk';
     }
-
 }
