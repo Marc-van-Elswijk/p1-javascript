@@ -6,6 +6,10 @@ var player
 var computer 
 var result 
 
+function start_spel() {
+    window.location.href = "../pagina/rock paper and scissors.html";
+}
+
 possibleChoices.forEach(button => button.addEventListener('click', (e) => {
     player = e.target.id;
     playerChoice.innerHTML = player;
@@ -38,46 +42,42 @@ function getResult() {
     //gewonnen
 
     if (computer == 'dices of light' && player == "dices of evil") {
-        resultOutput.innerHTML = 'je hebt gewonnen, dappere krijger!';
+        resultOutput.innerHTML = 'You have won! Good job Traveler';
     }
 
     if (computer == 'gamemaster marc' && player == "dices of light") {
-        resultOutput.innerHTML = 'je hebt gewonnen, dappere krijger!';
+        resultOutput.innerHTML = 'You have won! Good job Traveler';
     }
 
     if (computer == 'dices of evil' && player == "gamemaster marc") {
-        resultOutput.innerHTML = 'je hebt gewonnen, dappere krijger!';
+        resultOutput.innerHTML = 'You have won! Good job Traveler';
     }
 
     //gelijkspel
 
     if (computer == 'dices of light' && player == "dices of light") {
-        resultOutput.innerHTML = 'wat doe je dappere krijger?!  Een gelijkspel is toch niks voor jou!';
+        resultOutput.innerHTML = 'what are u doing Traveler?! A draw is not something for you, right?';
     }
 
     if (computer == 'gamemaster marc' && player == "gamemaster marc") {
-        resultOutput.innerHTML = 'wat doe je dappere krijger?!  Een gelijkspel is toch niks voor jou!';
+        resultOutput.innerHTML = 'what are u doing Traveler?! A draw is not something for you, right?';
     }
 
     if (computer == 'dices of evil' && player == "dices of evil") {
-        resultOutput.innerHTML = 'wat doe je dappere krijger?!  Een gelijkspel is toch niks voor jou!';
+        resultOutput.innerHTML = 'what are u doing Traveler?! A draw is not something for you, right?';
     }
 
     //Verloren
     
     if (computer == 'dices of light' && player == "gamemaster marc") {
-        resultOutput.innerHTML = 'Helaas dappere krijger. deze keer heb je minder geluk';
+        resultOutput.innerHTML = 'oof. You have lost this time Traveler. Maybe u need more luck for this';
     }
 
     if (computer == 'gamemaster marc' && player == "dices of evil") {
-        resultOutput.innerHTML = 'Helaas dappere krijger. deze keer heb je minder geluk';
+        resultOutput.innerHTML = 'oof. You have lost this time Traveler. Maybe u need more luck for this';
     }
 
     if (computer == 'dices of evil' && player == "dices of light") {
-        resultOutput.innerHTML = 'Helaas dappere krijger. deze keer heb je minder geluk';
+        resultOutput.innerHTML = 'oof. You have lost this time Traveler. Maybe u need more luck for this';
     }
-}
-
-function start_spel() {
-    window.location.href = "../pagina/rock paper and scissors.html";
 }
