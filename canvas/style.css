@@ -1,0 +1,19 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#gamecontainer {
+    width: 1000px;
+    height: 1000px;
+    background-color: gray;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    color: red;
+    z-index: inherit;
+}

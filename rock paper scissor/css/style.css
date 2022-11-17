@@ -26,8 +26,18 @@ button {
     margin-left: 450px;
     background-color: black;
     color: white;
+    box-shadow: 5px 10px rgba(53, 53, 53, 0.479);
+    transition: 500ms ease;
 }
 
 .indy {
     background-color: rgb(192, 6, 6);
+}
+
+.start:hover {
+    box-shadow: none;
+}
+
+.start:active {
+    opacity: 0.8;
 }
